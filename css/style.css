@@ -279,6 +279,12 @@ p {
     justify-content: center;
 }
 
+.flip_card:focus {
+    border: 4px solid #70a14f;
+    border-radius: 12px;
+    outline: none;      
+}
+
 .flip_card_inner {
     position: relative;
     width: 100%;
@@ -350,7 +356,6 @@ p {
     background-color: black;
     overflow: hidden;
     margin-top: 50px;
-    padding: 0;
 }
 
 .footer_bar p {
@@ -363,6 +368,7 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    /* doesnt work */
     body {
         background-image: url('../images/pink_background.jpg');
     }
@@ -373,6 +379,8 @@ p {
         mask-position: none;
         opacity: 1;
     }
+
+    /* add changes to card flipping */
 }
 
 @media screen and (min-width: 800px) {
