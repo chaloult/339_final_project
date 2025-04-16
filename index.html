@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Favorite Video Games</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body> 
+
+	<audio id = "ralts_sound" src = "audio/Ralts.wav" preload = "auto"></audio>
+	<audio id = "kirlia_sound" src = "audio/Kirlia.wav" preload = "auto"></audio>
+	<audio id = "gardevoir_sound" src = "audio/Gardevoir.wav" preload = "auto"></audio>
+
+	<header>
+		<nav>
+			<div class = "skip">
+				<a href = "#main">Skip to Main Content</a>
+			</div>
+			<div class = "nav_bar">
+				<ul>
+					<li><a class = "active" href="index.html">Home</a></li>
+					<li><a href="childhood.html">Childhood</a></li>
+					<li><a href="teens.html">Teens</a></li>
+					<li><a href="present.html">Present</a></li>
+				  </ul>
+			</div>
+		</nav>
+	</header>
+	<main id = "main">
+		<h1>My Life in Video Games</h1>
+
+		<div class = "bio_container">
+			<p class = "bio">
+				Hi! My name is Sarah and I'm a sophomore studying Information Analysis at the University of Michigan School of Information.
+			</p>
+			<p class = "bio">
+				For my final project for my web development class, I decided to create a website showcasing my favorite video games through the different stages of my life!
+			</p>
+			<p class = "bio">
+				Either click on one of the cards below to go the video games for that time period of my life or use the navigation bar above.
+			</p>
+			<p class = "bio">
+				Hover over any of the cards below to hear the Pokemon's sound! If you don't like this feature, you can use the button below to turn it off.
+			</p>
+		</div>
+
+		<div class = "button_container" id = "sound">
+			<button id = "toggle_sound">Pokemon Sounds: ON</button>
+		</div>
+
+		<div class = "cards_container">
+			<div class = "card_background">
+				<div class = "pokemon_card">
+					<a href = "childhood.html" id = "ralts">
+						<div class = "card_header">
+							<span class = "badge">BASIC</span>
+							<span class = "pokemon_name">Childhood</span>
+							<span class = "hp">HP 30</span>
+						</div>
+						<div class = "card_image">
+							<img src = "images/ralts.jpg" alt = "ralts">
+						</div>
+						<div class = "attack">
+							<div class = "attack_name">
+								<p>Childhood</p>
+							</div>
+							<div class = "attack_description">
+								<p>
+									Video games from my childhood.
+								</p>
+							</div>
+						</div>
+						<div class = "card_footer">
+							<p>
+								click me!
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class = "card_background">
+				<div class = "pokemon_card">
+					<a href = "teens.html" id = "kirlia">
+						<div class = "card_header">
+							<span class = "badge">STAGE 1</span>
+							<span class = "pokemon_name">Teens</span>
+							<span class = "hp">HP 90</span>
+						</div>
+						<div class = "card_image">
+							<img src = "images/kirlia.jpg" alt = "ralts">
+						</div>
+						<div class = "attack">
+							<div class = "attack_name">
+								<p>Teens</p>
+							</div>
+							<div class = "attack_description">
+								<p>
+									Video games from my teenage years.
+								</p>
+							</div>
+						</div>
+						<div class = "card_footer">
+							<p>
+								click me!
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class = "card_background">
+				<div class = "pokemon_card" id = "gardevoir">
+					<a href = "present.html">
+						<div class = "card_header">
+							<span class = "badge">STAGE 2</span>
+							<span class = "pokemon_name">Present</span>
+							<span class = "hp">HP 150</span>
+						</div>
+						<div class = "card_image">
+							<img src = "images/gardevoir.jpg" alt = "ralts">
+						</div>
+						<div class = "attack">
+							<div class = "attack_name">
+								<p>Present</p>
+							</div>
+							<div class = "attack_description">
+								<p>
+									My current favorite video games.
+								</p>
+							</div>
+						</div>
+						<div class = "card_footer">
+							<p>
+								click me!
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</main>
+<script src = "js/index_js.js"></script>
+<footer>
+	<div class = footer_bar>
+		<p>Sarah Chaloult 2025</p>
+	</div>
+</footer>
+</body> 
+</html>

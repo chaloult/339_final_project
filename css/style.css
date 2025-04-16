@@ -1,0 +1,387 @@
+/* --- Fonts --- */
+
+@font-face {
+    font-family: 'Daydream';
+    src: url('../fonts/Daydream.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rainyhearts';
+    src: url('../fonts/rainyhearts.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- General Styling --- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+body {
+    cursor: url("../images/celebi_48.png") 16 16, auto;
+}
+*/
+
+.skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    top: 20px;
+    border: 2px solid black;
+    color: black;
+}
+
+.skip a {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: -40px;
+    color: black;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../images/pink_background.gif');
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Daydream', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1 / -1;
+    line-height: 1.5em;
+    margin: 50px;
+}
+
+.bio_container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin: 50px;
+}
+
+.bio {
+    font-size: 175%;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    font-family: 'rainyhearts';
+}
+
+/* --- Button Styling --- */
+
+.button_container {
+    display: grid;
+    justify-items: center;
+}
+
+#toggle_sound {
+    margin: 20px;
+    padding: 10px 20px;
+    font-family: 'Daydream', sans-serif;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#toggle_sound:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+#toggle_sound:focus {
+    outline: none;
+    color: black;
+    background-color: lightgrey;
+    border: 3px solid black;
+}
+
+/* --- Navigation Styling --- */
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.nav_bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 100%;
+    font-family: 'Daydream';
+}
+
+.nav_bar a:hover, .nav_bar a:focus {
+    background-color: lightgrey;
+    color: black;
+}
+
+.nav_bar a:focus {
+    outline: none;
+    border: 3px solid #70a14f;
+}
+
+.nav_bar a.active {
+    background-color: #F5ACC4;
+    color: white;
+}
+
+
+/* --- Homepage Pokemon card styling --- */
+
+.cards_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 40px;
+}
+
+.card_background {
+    width: 248px;
+    height: 339px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    margin: 20px;
+}
+
+.pokemon_card {
+    width: 225px;
+    height: 315px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #F5ACC4, #FDEEF4);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    padding: 12px;
+    font-family: 'rainyhearts', sans-serif;
+    color: black;
+
+    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    -webkit-mask-size: 800%;
+    mask-size: 800%;
+    -webkit-mask-position: 0;
+    mask-position: 0;
+}
+
+.pokemon_card:hover,
+.pokemon_card:focus-within {
+    transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
+}
+
+.pokemon_card a {
+    color: inherit;
+    outline: none;
+}
+
+.pokemon_card:focus-within {
+    border: 4px solid black;
+}
+
+.card_header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.badge {
+    background-color: lightgrey;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.card_image {
+    width: 100%;
+    height: 150px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+  
+.card_info {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 6px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+  
+.card_footer {
+    margin-top: 85px;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.attack {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 6px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.attack_name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.attack_description {
+    font-size: 14px;
+    text-align: left;
+}
+
+/* --- Game Info Card Style --- */
+
+.flip_card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 40px;
+}
+
+.flip_card {
+    background-color: transparent;
+    width: 248px;
+    height: 339px;
+    perspective: 1000px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip_card.flipped .flip_card_inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip_card_front, .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip_card_front {
+    border-radius: 12px;
+    background: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border: none;
+  }
+
+  .flip_card_front img {
+    width: 248px;
+    height: 339px;
+  }
+
+  .flip_card_back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.game_card {
+    width: 225px;
+    height: 315px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #F5ACC4, #FDEEF4);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    padding: 12px;
+    font-family: 'rainyhearts', sans-serif;
+    color: black;
+    transition: transform 0.7s;
+}
+
+.game_footer {
+    margin-top: 25px;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.game_footer#cooking_mama {
+    margin-top: 15px;
+}
+
+.game_footer#minecraft {
+    margin-top: 5px;
+}
+
+/* --- Footer Styling --- */
+
+.footer_bar {
+    background-color: black;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.footer_bar p {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 100%;
+    font-family: 'Daydream';
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        background-image: url('../images/pink_background.jpg');
+    }
+    
+    .pokemon_card:hover {
+        transition: none;
+        -webkit-mask-position: none;
+        mask-position: none;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .cards_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .flip_card_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
