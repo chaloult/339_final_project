@@ -2,33 +2,481 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Current Favorite Video Games</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body> 
-	<header>
-		<nav>
-			<div class = "skip">
-				<a href = "#main">Skip to Main Content</a>
-			</div>
-			<div class = "nav_bar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="childhood.html">Childhood</a></li>
-					<li><a href="teens.html">Teens</a></li>
-					<li><a class = "active" href="present.html">Present</a></li>
-				  </ul>
-			</div>
-		</nav>
-	</header>
-	<main id = "main">
-		<h1>My Current Favorite Video Games</h1>
-	</main>
-    <footer>
-        <div class = footer_bar>
-            <p>Sarah Chaloult 2025</p>
-        </div>
-    </footer>
+	<div id = "wrapper">
+        <header>
+            <nav>
+                <div class = "skip">
+                    <a href = "#main">Skip to Main Content</a>
+                </div>
+                <div class = "nav_bar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="childhood.html">Childhood</a></li>
+                        <li><a href="teens.html">Teens</a></li>
+                        <li><a class = "active" href="present.html">Present</a></li>
+                      </ul>
+                </div>
+            </nav>
+        </header>
+        <main id = "main">
+            <h1>My Current Favorite Video Games</h1>
+    
+            <div class = "bio_container">
+                <p class = "bio">
+                    Below are the games that I am currently playing.
+                </p>
+                <p class = "bio">
+                    Click on a card to flip it over and reveal the game!
+                </p>
+            </div>
+    
+            <div class = "flip_card_container">
+                <div class = "flip_card" tabindex = "0">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <div>
+                                <img src = "images/pokemon_back.png">
+                            </div>
+                        <!--
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">BASIC</span>
+                                      <span class = "pokemon_name">Childhood</span>
+                                      <span class = "hp">HP 30</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/ralts.jpg" alt = "ralts">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Childhood</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Video games from my childhood.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "card_footer">
+                                      <p>
+                                          click me!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        -->
+                        </div>
+                        <div class="flip_card_back">
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">STAGE 2</span>
+                                      <span class = "pokemon_name">Valorant</span>
+                                      <span class = "hp">HP 150</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/valorant.jpg" alt = "Promotional art for Valorant's launch.">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Valorant</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Definitely my most played game currently, and my very first FPS game.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "attack">
+                                    <div class = "attack_name">
+                                        <p>Console: PC</p>
+                                    </div>
+                                  </div>
+                                  <div class = "game_footer" id = "valorant">
+                                      <p>
+                                        ♡♡♡
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class = "flip_card" tabindex = "0">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <div>
+                                <img src = "images/pokemon_back.png">
+                            </div>
+                        <!--
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">BASIC</span>
+                                      <span class = "pokemon_name">Childhood</span>
+                                      <span class = "hp">HP 30</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/ralts.jpg" alt = "ralts">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Childhood</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Video games from my childhood.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "card_footer">
+                                      <p>
+                                          click me!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        -->
+                        </div>
+                        <div class="flip_card_back">
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">STAGE 2</span>
+                                      <span class = "pokemon_name">Project Sekai</span>
+                                      <span class = "hp">HP 150</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/pjsekai.png" alt = "Promotional art for Project Sekai: Colorful Stage!">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Project Sekai: Colorful Stage!</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Currently my most played mobile game.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "attack">
+                                    <div class = "attack_name">
+                                        <p>Console: Mobile</p>
+                                    </div>
+                                  </div>
+                                  <div class = "game_footer" id = "pjsekai">
+                                      <p>
+                                        ♡♡♡
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class = "flip_card" tabindex = "0">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <div>
+                                <img src = "images/pokemon_back.png">
+                            </div>
+                        <!--
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">BASIC</span>
+                                      <span class = "pokemon_name">Childhood</span>
+                                      <span class = "hp">HP 30</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/ralts.jpg" alt = "ralts">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Childhood</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Video games from my childhood.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "card_footer">
+                                      <p>
+                                          click me!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        -->
+                        </div>
+                        <div class="flip_card_back">
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">STAGE 2</span>
+                                      <span class = "pokemon_name">Honkai: SR</span>
+                                      <span class = "hp">HP 150</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/honkai.jpg" alt = "Promotional art for Honkai: Star Rail.">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Honkai: Star Rail</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Though I haven't been able to play it much this semester due to school, I plan to finally get back on it during summer break.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "attack">
+                                    <div class = "attack_name">
+                                        <p>Console: PC</p>
+                                    </div>
+                                  </div>
+                                  <div class = "game_footer" id = "honkai">
+                                      <p>
+                                        ♡♡♡
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class = "flip_card" tabindex = "0">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <div>
+                                <img src = "images/pokemon_back.png">
+                            </div>
+                        <!--
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">BASIC</span>
+                                      <span class = "pokemon_name">Childhood</span>
+                                      <span class = "hp">HP 30</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/ralts.jpg" alt = "ralts">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Childhood</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Video games from my childhood.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "card_footer">
+                                      <p>
+                                          click me!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        -->
+                        </div>
+                        <div class="flip_card_back">
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">STAGE 2</span>
+                                      <span class = "pokemon_name">Pokemon Sword</span>
+                                      <span class = "hp">HP 150</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/pokemon_sword.jpg" alt = "Art for Pokemon Sword from its Nintendo Store page.">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Pokemon Sword</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Though I've had this game since 2020, I didn't actually start playing it a lot until recently.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "attack">
+                                    <div class = "attack_name">
+                                        <p>Console: Nintendo Switch</p>
+                                    </div>
+                                  </div>
+                                  <div class = "game_footer" id = "sword">
+                                      <p>
+                                        ♡♡♡
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class = "flip_card" tabindex = "0">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <div>
+                                <img src = "images/pokemon_back.png">
+                            </div>
+                        <!--
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">BASIC</span>
+                                      <span class = "pokemon_name">Childhood</span>
+                                      <span class = "hp">HP 30</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/ralts.jpg" alt = "ralts">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Childhood</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Video games from my childhood.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "card_footer">
+                                      <p>
+                                          click me!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        -->
+                        </div>
+                        <div class="flip_card_back">
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">STAGE 2</span>
+                                      <span class = "pokemon_name">Baldur's Gate 3</span>
+                                      <span class = "hp">HP 150</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/baldurs_gate.jpg" alt = "Art for Baldur's Gate 3 from its PS5 store page.">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Baldur's Gate 3</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              The newest addition to this list, with my friend gifting it to me around 2 weeks ago. Though I haven't had much time to play it, I plan to play it with my friends during summer break.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "attack">
+                                    <div class = "attack_name">
+                                        <p>Console: PC</p>
+                                    </div>
+                                  </div>
+                                  <div class = "game_footer" id = "baldurs">
+                                      <p>
+                                        ♡♡♡
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class = "flip_card" tabindex = "0">
+                    <div class="flip_card_inner">
+                        <div class="flip_card_front">
+                            <div>
+                                <img src = "images/pokemon_back.png">
+                            </div>
+                        <!--
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">BASIC</span>
+                                      <span class = "pokemon_name">Childhood</span>
+                                      <span class = "hp">HP 30</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/ralts.jpg" alt = "ralts">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Childhood</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                              Video games from my childhood.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "card_footer">
+                                      <p>
+                                          click me!
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        -->
+                        </div>
+                        <div class="flip_card_back">
+                          <div class = "card_background">
+                              <div class = "game_card">
+                                  <div class = "card_header">
+                                      <span class = "badge">STAGE 2</span>
+                                      <span class = "pokemon_name">ACNH</span>
+                                      <span class = "hp">HP 150</span>
+                                  </div>
+                                  <div class = "card_image">
+                                      <img src = "images/acnh.jpg" alt = "Art for Animal Crossing: New Horizons from its Nintendo Store page.">
+                                  </div>
+                                  <div class = "attack">
+                                      <div class = "attack_name">
+                                          <p>Animal Crossing: New Horizons</p>
+                                      </div>
+                                      <div class = "attack_description">
+                                          <p>
+                                            My most played title on the Nintendo Switch. I played this a lot when it came out back in 2020, but it has followed me into adulthood and is a nice way to take a break from school.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class = "attack">
+                                    <div class = "attack_name">
+                                        <p>Console: Nintendo Switch</p>
+                                    </div>
+                                  </div>
+                                  <div class = "game_footer" id = "acnh">
+                                      <p>
+                                        ♡♡♡
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </main>
+        <script src = "js/present_js.js"></script>
+        <footer>
+            <div class = footer_bar>
+                <p>Sarah Chaloult 2025</p>
+            </div>
+        </footer>
+    </div>
 </body> 
 </html>

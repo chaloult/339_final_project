@@ -28,6 +28,15 @@ body {
 }
 */
 
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#main {
+    padding-bottom: 75px;
+}
+
 .skip a:focus {
     position: static;
     width: auto;
@@ -38,7 +47,7 @@ body {
 }
 
 .skip a {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     position: absolute;
     top: -40px;
     color: black;
@@ -150,7 +159,6 @@ p {
     color: white;
 }
 
-
 /* --- Homepage Pokemon card styling --- */
 
 .cards_container {
@@ -178,7 +186,6 @@ p {
     padding: 12px;
     font-family: 'rainyhearts', sans-serif;
     color: black;
-
     -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     -webkit-mask-size: 800%;
@@ -342,20 +349,27 @@ p {
     text-align: center;
 }
 
-.game_footer#cooking_mama {
+/* --- Specific Card Footer Styling --- */
+
+.game_footer#cooking_mama, .game_footer#kirby_mass_attack, .game_footer#wii_sports_resort, 
+.game_footer#club_penguin, .game_footer#pokemon_moon, .game_footer#stardew, .game_footer#acnl, 
+.game_footer#genshin_impact, .game_footer#honkai {
     margin-top: 15px;
 }
 
-.game_footer#minecraft {
+.game_footer#minecraft, .game_footer#bandori, .game_footer#ace_attorney, .game_footer#baldurs, 
+.game_footer#acnh {
     margin-top: 5px;
 }
 
 /* --- Footer Styling --- */
 
 .footer_bar {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
     background-color: black;
     overflow: hidden;
-    margin-top: 50px;
 }
 
 .footer_bar p {
@@ -372,6 +386,12 @@ p {
     body {
         background-image: url('../images/pink_background.jpg');
     }
+
+    .skip a {
+        transition: none;
+    }
+
+    /* Disable shine effect */
     
     .pokemon_card:hover {
         transition: none;
@@ -380,7 +400,37 @@ p {
         opacity: 1;
     }
 
-    /* add changes to card flipping */
+    /* Change flipping animation */
+
+    .flip_card_inner {
+        transition: none;
+        transform: none;
+    }
+
+    .flip_card_front,
+    .flip_card_back {
+        backface-visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flip_card:not(.flipped) .flip_card_front {
+        display: block;
+    }
+
+    .flip_card:not(.flipped) .flip_card_back {
+        display: none;
+    }
+
+    .flip_card.flipped .flip_card_front {
+        display: none;
+    }
+
+    .flip_card.flipped .flip_card_back {
+        display: block;
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 800px) {
