@@ -149,7 +149,7 @@ p {
 }
 
 .nav_bar a.active {
-    background-color: #F5ACC4;
+    background-color: #A61746;
     color: white;
 }
 
@@ -377,7 +377,7 @@ p {
 
 @media (prefers-reduced-motion: reduce) {
     /* Change background to still image */
-    
+
     body {
         background-image: url('../images/pink_background.jpg');
     }
